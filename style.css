@@ -1,0 +1,11 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+}
+.javascript h6{
+    font-size: 30px;
+    font-weight: bolder;
+}

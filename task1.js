@@ -1,3 +1,4 @@
+/*
 // question one
 let name="John";
 console.log(name);
@@ -72,7 +73,7 @@ let integer=3;
 let Test=2;
 let rem=integer%Test;
 if (rem==0) {prompt("even number")
-} else if (rem==1){prompt ('old number')};
+} else if (rem==1) {prompt('old number')};
 
 // question 10
 let g=5
@@ -103,7 +104,121 @@ console.log(output);
 // question 14
 let y=5*(3+2)/2;
 console.log(y);
+*/
 
 
+//TASK 2
+//question 1
+let studentScore=prompt('Enter Student Score');
+    if(studentScore >=90 && studentScore<=100){
+        console.log('A')
+    }
+    else if(studentScore >=80 && studentScore<=89){
+    console.log('B')
+    }
+    else if(studentScore >=70 && studentScore<=79){
+       console.log('C')
+    }
+    else if(studentScore >=60 && studentScore<=69){
+        console.log('D')
+    }
+    else {
+        console.log('Fail')
+    }
 
 
+//question Two
+let year=prompt('Enter Year');
+let yearChecker=(year%4);
+    if(yearChecker ==0){
+        console.log('Leap Year')
+    }
+    else{
+        console.log('Not a Leap Year')
+    }
+
+//question Three
+let Temp=19;
+let tempMessage;
+    if(Temp >=30){
+        console.log('Hot')
+    }
+    else if(Temp >=20 && Temp <=29){
+        console.log('Moderate')
+    }
+    else{
+        console.log('Cold')
+    }
+// Question Four
+let message;
+let userName= prompt('Enter userName'),
+    userPassword=prompt('Enter your password');
+        if(userName =='user123'&& userPassword =='password123'){
+            message='Login successful'
+        }
+        else{
+            message='Login failed'
+        }
+        console.log(message);
+
+// Question Five
+
+let x=prompt('Enter your first number'),
+    y=prompt('Enter your second number');
+        if(y>x){
+            console.log(`${x} is greater than ${y}`)
+        }else if(y==x){
+            console.log('These two numbers are equal');
+        }else{
+            console.log('These two numbers are not equal');
+        }
+
+// Question Six
+let age=prompt('What is your current age?'),
+    ageConfirm=confirm('Are you a student?');
+        if(age >=18 && ageConfirm ==!true){
+            console.log('You are Eligible');
+        }else{
+            console.log('You are not Eligible');
+        }
+
+// Question seven
+let voterAge=prompt('What is your age?'),
+    citizenshipStatus=confirm('Are you are citizem');
+        if(voterAge >=18 && citizenshipStatus ==true){
+            console.log('You are eligible to vote');
+        }else{
+            console.log('You are not eligible to vote')
+        }
+
+//Question Eight
+let password=prompt('Enter Password');
+        if(password.length <8){
+            console.log('Weak Password: Password must at least have 8 characters with Special Characters, Uppercase, & Lower case');
+        }else if(password.search(/[a-z]/) < 0){
+            console.log('Weak Password: Password must contain at least oneLowercase');
+        }else if(password.search(/[A-Z]/) < 0){
+            console.log('Weak Password: Pasword must contain at least one Uppercase');
+        }else if(password.search(/[0-9]/) < 0){
+            console.log('Weak Password: Password must contain at least one number');
+        }else if(password.search(/[!@#$%^&*()\-+.]/)){
+            console.log('Weak Password: Password must contain at least one Special Character');
+        }
+        else{
+            console.log('Strong password')
+        }
+
+// Question Nine
+let actualBalance=prompt('What is your Available Balance'),
+    withdrawalAmount=prompt('How much do you want to withdwal');
+        if(withdrawalAmount > actualBalance){
+            console.log('You have Insufficient Funds')
+        }else{
+            console.log('Proceed to Withdraw')
+        }
+//Question Ten
+
+function personName (firstName){
+    console.log('')
+}
+personName('John'); 

@@ -5,9 +5,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="refresh" content="50">
         <link rel ="icon" href="">
+        <link rel="stylesheet" href="style.css">
         <title>My first Webpage</title>
+        <style>
+            input[type=checkbox] {
+            accent-color: red;}
+            input[type=radio]{accent-color: gray;}
+        </style>
     </head>
     <body>
+         <form>
+            <p> Choose the humanities you pursued in College</p>
+            <input type="checkbox" name="subject" value="Biology">Biology
+            <input type="checkbox" name="subject" value="Kiswahili">Kiswahili
+            <input type="checkbox" name="subject" value="English"> English
+            <input type="checkbox" name="subject" value="Physics"> Physics<br>
+            <input type="date" value="date">
+        </form>
+        <form>
+            <p>Select your Salutation</p>
+            <input type="radio" name="salutation" value="Mr">Mr
+            <input type="radio" name="salutation" value="Mrs">Mrs
+            <input type="radio" name="salutation" value="Miss">Miss
+            <input type="radio" name="salutation" value="Dr"> Dr
+            <input type="radio" name="salutation" value="Rev"> Rev
+        </form>
+        <form >
+            <p style="color:blue;font-size: 25px"><b>Which county are you from</b></p>
+            <select type="dropdown">
+                <option value="Makueni">Makueni</option>
+                <option value="Machakos">Machakos</option>
+                <option value="Kitui"> Kitui</option>
+                <option value="Nyamira">Nyamira</option>
+                <option value="Kisumu">Kisumu</option>
+            </select>
+        </form>
         <script src="task1.js"></script>
+        <div class="content">
+            <div>Welcome to my Webpage. The site provides you with quality services for quality outcomes</div>
+            <div>This is the site that gives you all outputs</div>
+            <div>They went to the Market. They are all quality things that are good for the markets.</div>
+            <div>They did not Find Him. They are all off the market. They have nothing serious to offer</div>
+        </div>
+        <div class="javascript">
+            <p>JavaScript for Loop</p>
+            <p>In programmig, loops are used to request a block of code. <br> For example, if you want to show a message 100 times, then you are sure you can use a loop.<br> This tutorial focuses on javascript for loop.</p>
+        </div>
     </body>
 </html>
