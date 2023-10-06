@@ -109,23 +109,24 @@ console.log(y);
 
 //TASK 2
 //question 1
-let studentScore=prompt('Enter Student Score');
-    if(studentScore >=90 && studentScore<=100){
-        console.log('A')
+let score=prompt('Enter Student Score');
+function studentScore(score){
+    if(score >=90 && studentScore<=100){
+        return 'A';
     }
-    else if(studentScore >=80 && studentScore<=89){
-    console.log('B')
+    else if(score >=80 && studentScore<=89){
+        return 'B';
     }
-    else if(studentScore >=70 && studentScore<=79){
-       console.log('C')
+    else if(score >=70 && studentScore<=79){
+       return 'C';
     }
-    else if(studentScore >=60 && studentScore<=69){
-        console.log('D')
+    else if(score >=60 && studentScore<=69){
+        return 'D';
     }
     else {
-        console.log('Fail')
+        return 'Fail';
     }
-
+}
 
 //question Two
 let year=prompt('Enter Year');
