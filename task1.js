@@ -110,33 +110,35 @@ console.log(y);
 //TASK 2
 //question 1
 let score=prompt('Enter Student Score');
-function studentScore(score){
-    if(score >=90 && studentScore<=100){
-        return score='A';
+function studentScore(){
+    let grade;
+    if(score >=90 && score<=100){
+        return (grade='A');
     }
-    else if(score >=80 && studentScore<=89){
-        return score='B';
+    else if(score >=80 && score<=89){
+        return (grade='B');
     }
-    else if(score >=70 && studentScore<=79){
-       return score='C';
+    else if(score >=70 && score<=79){
+       return (grade='C');
     }
-    else if(score >=60 && studentScore<=69){
-        return score ='D';
+    else if(score >=60 && score<=69){
+        return (grade ='D');
     }
     else {
-        return score='Fail';
+        return (grade='Fail');
     }
 }
-alert(prompt();)
+
 
 //question Two
 let year=prompt('Enter Year');
 let yearChecker=(year%4);
+let yearMessage;
     if(yearChecker ==0){
-        yearChecker='Leap Year';
+        yearMessage='Leap Year';
     }
     else{
-        yearChecker='Not a Leap Year';
+        yearMessage='Not a Leap Year';
     }
 
 //question Three
