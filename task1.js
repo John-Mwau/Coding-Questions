@@ -112,43 +112,44 @@ console.log(y);
 let score=prompt('Enter Student Score');
 function studentScore(score){
     if(score >=90 && studentScore<=100){
-        return 'A';
+        return score='A';
     }
     else if(score >=80 && studentScore<=89){
-        return 'B';
+        return score='B';
     }
     else if(score >=70 && studentScore<=79){
-       return 'C';
+       return score='C';
     }
     else if(score >=60 && studentScore<=69){
-        return 'D';
+        return score ='D';
     }
     else {
-        return 'Fail';
+        return score='Fail';
     }
 }
+alert(prompt();)
 
 //question Two
 let year=prompt('Enter Year');
 let yearChecker=(year%4);
     if(yearChecker ==0){
-        console.log('Leap Year')
+        yearChecker='Leap Year';
     }
     else{
-        console.log('Not a Leap Year')
+        yearChecker='Not a Leap Year';
     }
 
 //question Three
 let Temp=19;
 let tempMessage;
     if(Temp >=30){
-        console.log('Hot')
+        tempMessage='Hot';
     }
     else if(Temp >=20 && Temp <=29){
-        console.log('Moderate')
+        tempMessage='Moderate';
     }
     else{
-        console.log('Cold')
+        tempMessage='Cold';
     }
 // Question Four
 let message;
@@ -160,18 +161,20 @@ let userName= prompt('Enter userName'),
         else{
             message='Login failed'
         }
-        console.log(message);
+
 
 // Question Five
 
 let x=prompt('Enter your first number'),
-    y=prompt('Enter your second number');
+    y=prompt('Enter your second number'),
+    outputMessage;
+
         if(y>x){
-            console.log(`${x} is greater than ${y}`)
+            outputMessage=(`${x} is greater than ${y}`)
         }else if(y==x){
-            console.log('These two numbers are equal');
+            outputMessage=('These two numbers are equal');
         }else{
-            console.log('These two numbers are not equal');
+            outputMessage=('These two numbers are not equal');
         }
 
 // Question Six
