@@ -128,7 +128,7 @@ function studentScore(){
         return (grade='Fail');
     }
 }
-
+alert(studentScore());
 
 //question Two
 let year=prompt('Enter Year');
